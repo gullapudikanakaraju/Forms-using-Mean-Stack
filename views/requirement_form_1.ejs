@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Requiement Form 1</title>
+    <link rel="icon"  href="sarath.png">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #f2f2f2">
+   <div class="container" style="margin-left:10%; margin-top: 3%">
+    <p style="text-align: center;font-size: 20px"><b>REQUIREMENT FORM</b></p><br>
+   	  <form method="post" action="/requirement_form_1" enctype="application/x-www-form-urlencoded">
+   	  	 <div class="form-group" style="width: 60%;margin: auto">
+           <label for="user_story"><span style="color: red;font-size: 20px">*&nbsp;</span>User Story: ( maximum 1000 characters )</label>
+           <textarea class="form-control" rows="5" id="user_story" size="1000" required name="user_story"></textarea>
+         </div> <br><br>
+
+         <div class="form-group" style="width: 60%;margin: auto">
+           <label for="end_result"><span style="color: red;font-size: 20px">*&nbsp;</span>End Result: ( maximum 500 characters )</label>
+           <textarea class="form-control" rows="5" id="end_result" size="500" required name="end_result"></textarea>
+         </div><br><br>
+         
+         <div class="row" style="width: 60%;margin: auto;">
+          <div class="col-sm-5" style="padding: 0">
+            <div class="form-group" >
+           		<label for="time"><span style="color: red;font-size: 20px">*&nbsp;</span>Time : (hours per day)</label>
+           		<input type="number" class="form-control" id="time" required name="time"> 
+         	</div>
+          </div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-5" style="padding: 0">
+          	<div class="form-group" >
+           	    <label for="days"><span style="color: red;font-size: 20px">*&nbsp;</span>Days : ( between 2 and 90 )</label>
+           		<input type="number" class="form-control" id="days" min="2" max="90" required name="days"> 
+         	</div>
+          </div>
+         </div><br><br>
+
+         <div class="form-group" style="width: 60%;margin: auto;">
+  			<label for="platform"><span style="color: red;font-size: 20px">*&nbsp;</span>Platform :</label>
+  			<select class="form-control" id="platform" required name="platform">
+    			<option value="Android">Android</option>
+    			<option value="ios">ios</option>
+    			<option value="Web">Web</option>
+    			<option value="All">All</option>
+  			</select>
+		 </div>  <br><br>
+          
+         <div class="row" style="width: 60%;margin: auto;"> 
+            <div class="col-sm-4"></div>
+            <div class="col-sm-2">
+		       
+		       <button class="btn btn-primary" type="submit">submit</button>
+		    </div>
+		   <div class="col-sm-2">
+		       
+		       <button class="btn btn-primary" type="reset">reset</button>
+		   </div>
+		   <div class="col-sm-4"></div>
+         </div><br><br><br><br>
+   	  </form>
+   </div>
+</body>
+</html>
